@@ -22,7 +22,7 @@ range
 - `Int64Range` - for ranges that match the full signed 64 bit integer numeric 
 range
 
-Those can be casted in ary direction, as long as the numbers fit the range of 
+Those can be casted in any direction, as long as the numbers fit the range of 
 the target integer type.
 
 ## NuGET
