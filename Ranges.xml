@@ -1,0 +1,1040 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ranges</name>
+    </assembly>
+    <members>
+        <member name="T:wan24.Ranges.Int32Range">
+            <summary>
+            32 bit signed integer range
+            </summary>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#GetTypeCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToBoolean(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToByte(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToChar(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToDateTime(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToDecimal(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToDouble(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToInt16(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToInt32(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToInt64(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToSByte(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToSingle(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToString(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToType(System.Type,System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToUInt16(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToUInt32(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#IConvertible#ToUInt64(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="F:wan24.Ranges.Int32Range._FromIncluding">
+            <summary>
+            From including
+            </summary>
+        </member>
+        <member name="F:wan24.Ranges.Int32Range._Count">
+            <summary>
+            Count of numbers in the range excluding the first number (0..n)
+            </summary>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.#ctor(System.Int32,System.UInt32,System.Boolean)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="fromIncluding">From including</param>
+            <param name="count">Count of numbers in the range excluding the first number (0..n)</param>
+            <param name="isReadonly">Is readonly?</param>
+        </member>
+        <member name="P:wan24.Ranges.Int32Range.Item(System.Int32)">
+            <summary>
+            Get the number at an index
+            </summary>
+            <param name="index">Index</param>
+            <returns>Number</returns>
+        </member>
+        <member name="P:wan24.Ranges.Int32Range.FromIncluding">
+            <summary>
+            From including
+            </summary>
+        </member>
+        <member name="P:wan24.Ranges.Int32Range.Count">
+            <summary>
+            Count of numbers in the range
+            </summary>
+        </member>
+        <member name="P:wan24.Ranges.Int32Range.ToIncluding">
+            <summary>
+            To including
+            </summary>
+        </member>
+        <member name="P:wan24.Ranges.Int32Range.FromToIncluding">
+            <summary>
+            From and to including
+            </summary>
+        </member>
+        <member name="P:wan24.Ranges.Int32Range.IsReadonly">
+            <summary>
+            Is readonly?
+            </summary>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.IsMatch(System.Int32)">
+            <summary>
+            Determine if a number matches within this range
+            </summary>
+            <param name="number">Number</param>
+            <returns>Does match?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.IsMatch(wan24.Ranges.Int32Range)">
+            <summary>
+            Determine if a range matches within this range
+            </summary>
+            <param name="range">Range</param>
+            <returns>Does match?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.IsMatch(wan24.Ranges.Int64Range)">
+            <summary>
+            Determine if a range matches within this range
+            </summary>
+            <param name="range">Range</param>
+            <returns>Does match?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.MakeReadonly">
+            <summary>
+            Make this instance readonly
+            </summary>
+            <returns>This</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.CreateWritable">
+            <summary>
+            Create a writable instance clone
+            </summary>
+            <returns>Writable instance clone</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.Clone">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="P:wan24.Ranges.Int32Range.Range">
+            <summary>
+            Enumerable range
+            </summary>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.GetRange(System.Int32)">
+            <summary>
+            Get an enumerable range with stepping support
+            </summary>
+            <param name="stepping">Stepping</param>
+            <returns>Enumerable range</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.CreateRangeArray(System.Int32)">
+            <summary>
+            Create an array including all numbers from within the range
+            </summary>
+            <param name="stepping">Stepping</param>
+            <returns>All numbers from within the range</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#Collections#Generic#IEnumerable{System#Int32}#GetEnumerator">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.System#Collections#IEnumerable#GetEnumerator">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Implicit(wan24.Ranges.Int32Range)~System.Boolean">
+            <summary>
+            Cast as boolean
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Implicit(wan24.Ranges.Int32Range)~System.String">
+            <summary>
+            Cast as string
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Implicit(wan24.Ranges.Int32Range)~System.SByte">
+            <summary>
+            Cast as sbyte
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Implicit(wan24.Ranges.Int32Range)~System.Byte">
+            <summary>
+            Cast as byte
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Implicit(wan24.Ranges.Int32Range)~System.Int16">
+            <summary>
+            Cast as short
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Implicit(wan24.Ranges.Int32Range)~System.UInt16">
+            <summary>
+            Cast as ushort
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Implicit(wan24.Ranges.Int32Range)~System.Int32">
+            <summary>
+            Cast as int
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Implicit(wan24.Ranges.Int32Range)~System.UInt32">
+            <summary>
+            Cast as uint
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Implicit(wan24.Ranges.Int32Range)~System.Int64">
+            <summary>
+            Cast as long
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Implicit(wan24.Ranges.Int32Range)~System.UInt64">
+            <summary>
+            Cast as ulong
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Implicit(wan24.Ranges.Int32Range)~wan24.Ranges.Int64Range">
+            <summary>
+            Cast as 64 bit integer range
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Addition(wan24.Ranges.Int32Range,wan24.Ranges.Int32Range)">
+            <summary>
+            Create a new range that matches two ranges
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Range 1+2 matching new range</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Addition(wan24.Ranges.Int32Range,wan24.Ranges.Int64Range)">
+            <summary>
+            Create a new range that matches two ranges
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Range 1+2 matching new range</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Addition(wan24.Ranges.Int32Range,System.UInt32)">
+            <summary>
+            Extend a range
+            </summary>
+            <param name="range">Range</param>
+            <param name="count">Extend by count</param>
+            <returns>Updated range or new range (if readonly)</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Increment(wan24.Ranges.Int32Range)">
+            <summary>
+            Extend a range
+            </summary>
+            <param name="range">Range</param>
+            <returns>Updated range or new range (if readonly)</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Subtraction(wan24.Ranges.Int32Range,System.UInt32)">
+            <summary>
+            Shrink a range
+            </summary>
+            <param name="range">Range</param>
+            <param name="count">Shrink by count</param>
+            <returns>Updated range or new range (if readonly)</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Decrement(wan24.Ranges.Int32Range)">
+            <summary>
+            Shrink a range
+            </summary>
+            <param name="range">Range</param>
+            <returns>Updated range or new range (if readonly)</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_LeftShift(wan24.Ranges.Int32Range,System.Int32)">
+            <summary>
+            Shift a range (decrease the from including)
+            </summary>
+            <param name="range">Range</param>
+            <param name="count">Shift by count</param>
+            <returns>Updated range or new range (if readonly)</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_RightShift(wan24.Ranges.Int32Range,System.Int32)">
+            <summary>
+            Shift a range (increase the from including)
+            </summary>
+            <param name="range">Range</param>
+            <param name="count">Shift by count</param>
+            <returns>Updated range or new range (if readonly)</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Division(wan24.Ranges.Int32Range,System.Int32)">
+            <summary>
+            Divide a range into multiple ranges
+            </summary>
+            <param name="range">Range</param>
+            <param name="divisor">Divisor</param>
+            <returns>Divided ranges</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Equality(wan24.Ranges.Int32Range,wan24.Ranges.Int32Range)">
+            <summary>
+            Determine if range 2 matches into range 1
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is match?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Inequality(wan24.Ranges.Int32Range,wan24.Ranges.Int32Range)">
+            <summary>
+            Determine if range 2 does not match into range 1
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is not match?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Equality(wan24.Ranges.Int32Range,wan24.Ranges.Int64Range)">
+            <summary>
+            Determine if range 2 matches into range 1
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is match?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Inequality(wan24.Ranges.Int32Range,wan24.Ranges.Int64Range)">
+            <summary>
+            Determine if range 2 does not match into range 1
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is not match?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Equality(wan24.Ranges.Int32Range,System.Int32)">
+            <summary>
+            Determine if a range matches a number
+            </summary>
+            <param name="range">Range</param>
+            <param name="number">Number</param>
+            <returns>Number is in range?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_Inequality(wan24.Ranges.Int32Range,System.Int32)">
+            <summary>
+            Determine if a range does not match a number
+            </summary>
+            <param name="range">Range</param>
+            <param name="number">Number</param>
+            <returns>Number is not in range?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_LessThan(wan24.Ranges.Int32Range,wan24.Ranges.Int32Range)">
+            <summary>
+            Determine if range 1 is smaller than range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is smaller?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_GreaterThan(wan24.Ranges.Int32Range,wan24.Ranges.Int32Range)">
+            <summary>
+            Determine if range 1 is larger than range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is larger?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_LessThan(wan24.Ranges.Int32Range,wan24.Ranges.Int64Range)">
+            <summary>
+            Determine if range 1 is smaller than range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is smaller?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_GreaterThan(wan24.Ranges.Int32Range,wan24.Ranges.Int64Range)">
+            <summary>
+            Determine if range 1 is larger than range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is larger?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_LessThanOrEqual(wan24.Ranges.Int32Range,wan24.Ranges.Int32Range)">
+            <summary>
+            Determine if range 1 is smaller or equal than/to range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is smaller or equal?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_GreaterThanOrEqual(wan24.Ranges.Int32Range,wan24.Ranges.Int32Range)">
+            <summary>
+            Determine if range 1 is larger or equal than/to range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is larger or equal?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_LessThanOrEqual(wan24.Ranges.Int32Range,wan24.Ranges.Int64Range)">
+            <summary>
+            Determine if range 1 is smaller or equal than/to range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is smaller or equal?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_GreaterThanOrEqual(wan24.Ranges.Int32Range,wan24.Ranges.Int64Range)">
+            <summary>
+            Determine if range 1 is larger or equal than/to range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is larger or equal?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_LessThan(wan24.Ranges.Int32Range,System.Int32)">
+            <summary>
+            Determine if a number exceeds a ranges highest number
+            </summary>
+            <param name="range">Range</param>
+            <param name="number">Number</param>
+            <returns>Does exceed?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_GreaterThan(wan24.Ranges.Int32Range,System.Int32)">
+            <summary>
+            Determine if a number is lower than a ranges lowest number
+            </summary>
+            <param name="range">Range</param>
+            <param name="number">Number</param>
+            <returns>Is lower?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_LessThanOrEqual(wan24.Ranges.Int32Range,System.Int32)">
+            <summary>
+            Determine if a ranges lowest number is smaller than a number or the range matches the number
+            </summary>
+            <param name="range">Range</param>
+            <param name="number">Number</param>
+            <returns>Is smaller or equal?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.op_GreaterThanOrEqual(wan24.Ranges.Int32Range,System.Int32)">
+            <summary>
+            Determine if a ranges highest number is larger than a number or the range matches the number
+            </summary>
+            <param name="range">Range</param>
+            <param name="number">Number</param>
+            <returns>Is larger or equal?</returns>
+        </member>
+        <member name="F:wan24.Ranges.Int32Range.Zero">
+            <summary>
+            Zero range
+            </summary>
+        </member>
+        <member name="F:wan24.Ranges.Int32Range.Full">
+            <summary>
+            Full range
+            </summary>
+        </member>
+        <member name="F:wan24.Ranges.Int32Range.Negative">
+            <summary>
+            Negative range
+            </summary>
+        </member>
+        <member name="F:wan24.Ranges.Int32Range.Positive">
+            <summary>
+            Positive range
+            </summary>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.FromTo(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Create a range from/to including
+            </summary>
+            <param name="fromIncluding">From including</param>
+            <param name="toIncluding">To including</param>
+            <param name="isReadOnly">Is readonly?</param>
+            <returns>Range</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.FromArray(System.Int32[],System.Boolean)">
+            <summary>
+            Get ranges from an array of numbers
+            </summary>
+            <param name="arr">Array (having distinct values!)</param>
+            <param name="sort">Sort first?</param>
+            <returns>Ranges</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.CountRanges(System.Int32[],System.Boolean)">
+            <summary>
+            Get the number of ranges in an array of numbers
+            </summary>
+            <param name="arr">Array (having distinct values!)</param>
+            <param name="sort">Sort first?</param>
+            <returns>Number of contained ranges</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.ContainsMultipleRanges(System.Int32[],System.Boolean)">
+            <summary>
+            Determine if an array contains multiple ranges
+            </summary>
+            <param name="arr">Array (having distinct values!)</param>
+            <param name="sort">Sort first?</param>
+            <returns>Contains more then one range?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int32Range.EnumerateFrom(System.Int32)">
+            <summary>
+            Enumerate from start until <c>int.MaxValue</c>
+            </summary>
+            <param name="start">Start</param>
+            <returns>Enumerable</returns>
+        </member>
+        <member name="T:wan24.Ranges.Int64Range">
+            <summary>
+            64 bit signed integer range
+            </summary>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#GetTypeCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToBoolean(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToByte(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToChar(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToDateTime(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToDecimal(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToDouble(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToInt16(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToInt32(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToInt64(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToSByte(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToSingle(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToString(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToType(System.Type,System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToUInt16(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToUInt32(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#IConvertible#ToUInt64(System.IFormatProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="F:wan24.Ranges.Int64Range._FromIncluding">
+            <summary>
+            From including
+            </summary>
+        </member>
+        <member name="F:wan24.Ranges.Int64Range._Count">
+            <summary>
+            Count of numbers in the range excluding the first number (0..n)
+            </summary>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.#ctor(System.Int64,System.UInt64,System.Boolean)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="fromIncluding">From including</param>
+            <param name="count">Count of numbers in the range excluding the first number (0..n)</param>
+            <param name="isReadonly">Is readonly?</param>
+        </member>
+        <member name="P:wan24.Ranges.Int64Range.Item(System.Int64)">
+            <summary>
+            Get the number at an index
+            </summary>
+            <param name="index">Index</param>
+            <returns>Number</returns>
+        </member>
+        <member name="P:wan24.Ranges.Int64Range.FromIncluding">
+            <summary>
+            From including
+            </summary>
+        </member>
+        <member name="P:wan24.Ranges.Int64Range.Count">
+            <summary>
+            Count of numbers in the range
+            </summary>
+        </member>
+        <member name="P:wan24.Ranges.Int64Range.ToIncluding">
+            <summary>
+            To including
+            </summary>
+        </member>
+        <member name="P:wan24.Ranges.Int64Range.FromToIncluding">
+            <summary>
+            From and to including
+            </summary>
+        </member>
+        <member name="P:wan24.Ranges.Int64Range.IsReadonly">
+            <summary>
+            Is readonly?
+            </summary>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.IsMatch(System.Int64)">
+            <summary>
+            Determine if a number matches within this range
+            </summary>
+            <param name="number">Number</param>
+            <returns>Does match?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.IsMatch(wan24.Ranges.Int64Range)">
+            <summary>
+            Determine if a range matches within this range
+            </summary>
+            <param name="range">Range</param>
+            <returns>Does match?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.IsMatch(wan24.Ranges.Int32Range)">
+            <summary>
+            Determine if a range matches within this range
+            </summary>
+            <param name="range">Range</param>
+            <returns>Does match?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.MakeReadonly">
+            <summary>
+            Make this instance readonly
+            </summary>
+            <returns>This</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.CreateWritable">
+            <summary>
+            Create a writable instance clone
+            </summary>
+            <returns>Writable instance clone</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.Clone">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="P:wan24.Ranges.Int64Range.Range">
+            <summary>
+            Enumerable range
+            </summary>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.GetRange(System.Int64)">
+            <summary>
+            Get an enumerable range with stepping support
+            </summary>
+            <param name="stepping">Stepping</param>
+            <returns>Enumerable range</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.CreateRangeArray(System.Int64)">
+            <summary>
+            Create an array including all numbers from within the range
+            </summary>
+            <param name="stepping">Stepping</param>
+            <returns>All numbers from within the range</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#Collections#Generic#IEnumerable{System#Int64}#GetEnumerator">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.System#Collections#IEnumerable#GetEnumerator">
+            <inheritdoc/>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Implicit(wan24.Ranges.Int64Range)~System.Boolean">
+            <summary>
+            Cast as boolean
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Implicit(wan24.Ranges.Int64Range)~System.String">
+            <summary>
+            Cast as string
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Implicit(wan24.Ranges.Int64Range)~System.SByte">
+            <summary>
+            Cast as sbyte
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Implicit(wan24.Ranges.Int64Range)~System.Byte">
+            <summary>
+            Cast as byte
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Implicit(wan24.Ranges.Int64Range)~System.Int16">
+            <summary>
+            Cast as short
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Implicit(wan24.Ranges.Int64Range)~System.UInt16">
+            <summary>
+            Cast as ushort
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Implicit(wan24.Ranges.Int64Range)~System.Int32">
+            <summary>
+            Cast as int
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Implicit(wan24.Ranges.Int64Range)~System.UInt32">
+            <summary>
+            Cast as uint
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Implicit(wan24.Ranges.Int64Range)~System.Int64">
+            <summary>
+            Cast as long
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Implicit(wan24.Ranges.Int64Range)~System.UInt64">
+            <summary>
+            Cast as ulong
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Implicit(wan24.Ranges.Int64Range)~wan24.Ranges.Int32Range">
+            <summary>
+            Cast as 64 bit integer range
+            </summary>
+            <param name="range">Range</param>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Addition(wan24.Ranges.Int64Range,wan24.Ranges.Int64Range)">
+            <summary>
+            Create a new range that matches two ranges
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Range 1+2 matching new range</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Addition(wan24.Ranges.Int64Range,wan24.Ranges.Int32Range)">
+            <summary>
+            Create a new range that matches two ranges
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Range 1+2 matching new range</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Addition(wan24.Ranges.Int64Range,System.UInt32)">
+            <summary>
+            Extend a range
+            </summary>
+            <param name="range">Range</param>
+            <param name="count">Extend by count</param>
+            <returns>Updated range or new range (if readonly)</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Increment(wan24.Ranges.Int64Range)">
+            <summary>
+            Extend a range
+            </summary>
+            <param name="range">Range</param>
+            <returns>Updated range or new range (if readonly)</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Subtraction(wan24.Ranges.Int64Range,System.UInt64)">
+            <summary>
+            Shrink a range
+            </summary>
+            <param name="range">Range</param>
+            <param name="count">Shrink by count</param>
+            <returns>Updated range or new range (if readonly)</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Decrement(wan24.Ranges.Int64Range)">
+            <summary>
+            Shrink a range
+            </summary>
+            <param name="range">Range</param>
+            <returns>Updated range or new range (if readonly)</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_LeftShift(wan24.Ranges.Int64Range,System.Int32)">
+            <summary>
+            Shift a range (decrease the from including)
+            </summary>
+            <param name="range">Range</param>
+            <param name="count">Shift by count</param>
+            <returns>Updated range or new range (if readonly)</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_RightShift(wan24.Ranges.Int64Range,System.Int32)">
+            <summary>
+            Shift a range (increase the from including)
+            </summary>
+            <param name="range">Range</param>
+            <param name="count">Shift by count</param>
+            <returns>Updated range or new range (if readonly)</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Division(wan24.Ranges.Int64Range,System.Int64)">
+            <summary>
+            Divide a range into multiple ranges
+            </summary>
+            <param name="range">Range</param>
+            <param name="divisor">Divisor</param>
+            <returns>Divided ranges</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Equality(wan24.Ranges.Int64Range,wan24.Ranges.Int64Range)">
+            <summary>
+            Determine if range 2 matches into range 1
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is match?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Inequality(wan24.Ranges.Int64Range,wan24.Ranges.Int64Range)">
+            <summary>
+            Determine if range 2 does not match into range 1
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is not match?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Equality(wan24.Ranges.Int64Range,wan24.Ranges.Int32Range)">
+            <summary>
+            Determine if range 2 matches into range 1
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is match?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Inequality(wan24.Ranges.Int64Range,wan24.Ranges.Int32Range)">
+            <summary>
+            Determine if range 2 does not match into range 1
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is not match?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Equality(wan24.Ranges.Int64Range,System.Int64)">
+            <summary>
+            Determine if a range matches a number
+            </summary>
+            <param name="range">Range</param>
+            <param name="number">Number</param>
+            <returns>Number is in range?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_Inequality(wan24.Ranges.Int64Range,System.Int64)">
+            <summary>
+            Determine if a range does not match a number
+            </summary>
+            <param name="range">Range</param>
+            <param name="number">Number</param>
+            <returns>Number is not in range?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_LessThan(wan24.Ranges.Int64Range,wan24.Ranges.Int64Range)">
+            <summary>
+            Determine if range 1 is smaller than range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is smaller?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_GreaterThan(wan24.Ranges.Int64Range,wan24.Ranges.Int64Range)">
+            <summary>
+            Determine if range 1 is larger than range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is larger?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_LessThan(wan24.Ranges.Int64Range,wan24.Ranges.Int32Range)">
+            <summary>
+            Determine if range 1 is smaller than range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is smaller?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_GreaterThan(wan24.Ranges.Int64Range,wan24.Ranges.Int32Range)">
+            <summary>
+            Determine if range 1 is larger than range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is larger?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_LessThanOrEqual(wan24.Ranges.Int64Range,wan24.Ranges.Int64Range)">
+            <summary>
+            Determine if range 1 is smaller or equal than/to range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is smaller or equal?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_GreaterThanOrEqual(wan24.Ranges.Int64Range,wan24.Ranges.Int64Range)">
+            <summary>
+            Determine if range 1 is larger or equal than/to range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is larger or equal?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_LessThanOrEqual(wan24.Ranges.Int64Range,wan24.Ranges.Int32Range)">
+            <summary>
+            Determine if range 1 is smaller or equal than/to range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is smaller or equal?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_GreaterThanOrEqual(wan24.Ranges.Int64Range,wan24.Ranges.Int32Range)">
+            <summary>
+            Determine if range 1 is larger or equal than/to range 2
+            </summary>
+            <param name="a">Range 1</param>
+            <param name="b">Range 2</param>
+            <returns>Is larger or equal?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_LessThan(wan24.Ranges.Int64Range,System.Int64)">
+            <summary>
+            Determine if a number exceeds a ranges highest number
+            </summary>
+            <param name="range">Range</param>
+            <param name="number">Number</param>
+            <returns>Does exceed?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_GreaterThan(wan24.Ranges.Int64Range,System.Int64)">
+            <summary>
+            Determine if a number is lower than a ranges lowest number
+            </summary>
+            <param name="range">Range</param>
+            <param name="number">Number</param>
+            <returns>Is lower?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_LessThanOrEqual(wan24.Ranges.Int64Range,System.Int64)">
+            <summary>
+            Determine if a ranges lowest number is smaller than a number or the range matches the number
+            </summary>
+            <param name="range">Range</param>
+            <param name="number">Number</param>
+            <returns>Is smaller or equal?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.op_GreaterThanOrEqual(wan24.Ranges.Int64Range,System.Int64)">
+            <summary>
+            Determine if a ranges highest number is larger than a number or the range matches the number
+            </summary>
+            <param name="range">Range</param>
+            <param name="number">Number</param>
+            <returns>Is larger or equal?</returns>
+        </member>
+        <member name="F:wan24.Ranges.Int64Range.Zero">
+            <summary>
+            Zero range
+            </summary>
+        </member>
+        <member name="F:wan24.Ranges.Int64Range.Full">
+            <summary>
+            Full range
+            </summary>
+        </member>
+        <member name="F:wan24.Ranges.Int64Range.Negative">
+            <summary>
+            Negative range
+            </summary>
+        </member>
+        <member name="F:wan24.Ranges.Int64Range.Positive">
+            <summary>
+            Positive range
+            </summary>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.FromTo(System.Int64,System.Int64,System.Boolean)">
+            <summary>
+            Create a range from/to including
+            </summary>
+            <param name="fromIncluding">From including</param>
+            <param name="toIncluding">To including</param>
+            <param name="isReadOnly">Is readonly?</param>
+            <returns>Range</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.FromArray(System.Int64[],System.Boolean)">
+            <summary>
+            Get ranges from an array of numbers
+            </summary>
+            <param name="arr">Array (having distinct values!)</param>
+            <param name="sort">Sort first?</param>
+            <returns>Ranges</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.CountRanges(System.Int64[],System.Boolean)">
+            <summary>
+            Get the number of ranges in an array of numbers
+            </summary>
+            <param name="arr">Array (having distinct values!)</param>
+            <param name="sort">Sort first?</param>
+            <returns>Number of contained ranges</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.ContainsMultipleRanges(System.Int64[],System.Boolean)">
+            <summary>
+            Determine if an array contains multiple ranges
+            </summary>
+            <param name="arr">Array (having distinct values!)</param>
+            <param name="sort">Sort first?</param>
+            <returns>Contains more then one range?</returns>
+        </member>
+        <member name="M:wan24.Ranges.Int64Range.EnumerateFrom(System.Int64)">
+            <summary>
+            Enumerate from start until <c>long.MaxValue</c>
+            </summary>
+            <param name="start">Start</param>
+            <returns>Enumerable</returns>
+        </member>
+    </members>
+</doc>
